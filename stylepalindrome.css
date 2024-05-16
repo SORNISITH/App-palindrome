@@ -5,6 +5,7 @@
     margin: 0;
     font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color : #024674;
 }
 
 body {
@@ -36,7 +37,7 @@ fieldset {
     display: flex;
     
 }
-.input {
+#input1 {
     width: 550px;
 }
 
@@ -45,4 +46,31 @@ fieldset {
     width: 150px;
     background-color: gray;
     border-radius: 5px;
+}
+
+
+#btnCheck:hover {
+    background-color: rgb(71, 71, 71);
+}
+#btnCheck:active {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.resultColorTrue {
+    color: #2980b9;
+}
+.resultColorFalse {
+    color: #ff0000;
+}
+
+
+
+.input {
+    border: 7px solid #2980b9;
+}
+
+
+.inputFalse {
+    border: 7px solid #b92929;
 }
