@@ -67,25 +67,21 @@ const palindrome = (input) => {
 }
 
 const getCompare = () => {
-    let takeText = valueFromInput()
-    document.querySelector('#msgIsPalindrome').innerHTML = palindrome(takeText);
+    document.querySelector('#msgIsPalindrome').innerHTML = palindrome(valueFromInput());
 }   
 
 const getAutoString = () => {
-    let takeText = valueFromInput()
     msgColorCheck(true);
-    document.querySelector('#msgIsPalindrome').innerHTML = takeText;
+    let text = valueFromInput()
+    document.querySelector('#msgIsPalindrome').innerHTML = `Typing....input : ${text}`;
 
-    if (takeText == '') {
+    if (checkString.test(valueFromInput())) {
         msgColorCheck('borderBlue')
     } else {
-        if (checkString.test(valueFromInput())) {
-            msgColorCheck('borderBlue')
-        } else {
-            msgColorCheck('borderRed')
-        }
-
+        msgColorCheck('borderRed')
     }
+
+    
    
 }
 
